@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import { GoogleMap, LoadScript } from "@react-google-maps/api";
+import { GoogleMap, LoadScript, useJsApiLoader } from "@react-google-maps/api";
 import Card from "../component/Card";
 import "../css/City.css";
 import cityData from "../constants/City";
-import { useEffect } from "react";
 
 const key = process.env.REACT_APP_GOOGLE_MAP_API_KEY;
 
@@ -22,15 +21,32 @@ const City = () => {
     lng: city.lng,
   };
 
+  const { isLoaded } = useJsApiLoader({
+    id: "google-map-script",
+    googleMapsApiKey: key,
+  });
+
+  const [map, setMap] = React.useState(null);
+
+  const onLoad = React.useCallback(function callback(map) {
+    map.setZoom(18);
+    setMap(map);
+  }, []);
+
+  const onUnmount = React.useCallback(function callback(map) {
+    setMap(null);
+  }, []);
+
   return (
     <div className="City">
-      <LoadScript googleMapsApiKey={key}>
+      {isLoaded && (
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={center}
-          zoom={18}
+          onLoad={onLoad}
+          onUnmount={onUnmount}
         />
-      </LoadScript>
+      )}
       <div className="city-card">
         <Card name={city.name} title={city.title} />
       </div>
