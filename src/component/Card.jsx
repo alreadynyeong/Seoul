@@ -70,6 +70,33 @@ const imagePaths = {
   경복궁: require("../assets/card/경복궁.png"),
 };
 
+const gifPaths = {
+  신촌: require("../assets/card_gif/신촌.gif"),
+  혜화: require("../assets/card_gif/혜화.gif"),
+  덕수궁: require("../assets/card_gif/덕수궁.gif"),
+  잠실: require("../assets/card_gif/잠실.gif"),
+  남산: require("../assets/card_gif/남산.gif"),
+  여의도: require("../assets/card_gif/여의도.gif"),
+  석촌: require("../assets/card_gif/석촌.gif"),
+  상암: require("../assets/card_gif/상암.gif"),
+  성북동: require("../assets/card_gif/성북동.gif"),
+  정릉: require("../assets/card_gif/정릉.gif"),
+  한강: require("../assets/card_gif/한강.gif"),
+  지하철: require("../assets/card_gif/지하철.gif"),
+  압구정: require("../assets/card_gif/압구정.gif"),
+  성수: require("../assets/card_gif/성수.gif"),
+  동대문: require("../assets/card_gif/동대문.gif"),
+  홍대: require("../assets/card_gif/홍대.gif"),
+  대치: require("../assets/card_gif/대치.gif"),
+  인사동: require("../assets/card_gif/인사동.gif"),
+  을지로: require("../assets/card_gif/을지로.gif"),
+  북한산: require("../assets/card_gif/북한산.gif"),
+  디디피: require("../assets/card_gif/디디피.gif"),
+  서울역: require("../assets/card_gif/서울역.gif"),
+  동묘: require("../assets/card_gif/동묘.gif"),
+  경복궁: require("../assets/card_gif/경복궁.gif"),
+};
+
 const hoverPaths = {
   신촌: require("../assets/hover/신촌_호버.png"),
   혜화: require("../assets/hover/혜화_호버.png"),
