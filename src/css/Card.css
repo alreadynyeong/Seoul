@@ -1,0 +1,25 @@
+.card {
+  background-color: #ffffff;
+  width: 324px;
+  height: 414px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 71px;
+}
+
+.card-img {
+  height: 324px;
+  width: 324px;
+}
+
+.card-head {
+  font-family: Pretendard;
+  font-size: 32px;
+  font-weight: 400;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
