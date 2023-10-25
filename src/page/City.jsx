@@ -28,6 +28,7 @@ const City = () => {
     googleMapsApiKey: key,
   });
 
+  // eslint-disable-next-line no-unused-vars
   const [map, setMap] = React.useState(null);
 
   const onLoad = React.useCallback(function callback(map) {
