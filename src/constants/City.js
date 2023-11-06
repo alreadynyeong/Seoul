@@ -51,7 +51,7 @@ const cityData = [
   {
     id: 7,
     title: "상암",
-    name: "BROADCASTING STATAION",
+    name: "BROADCASTING STATION",
     lat: 37.5786204,
     lng: 126.8912893,
   },
